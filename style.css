@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 10px;
+  overflow-y: hidden;
+}
+.displayFlex {
+  display: flex;
+}
+
+.mainBody {
+  display: flex;
+  gap: 10px;
+}
+
+/* menu section */
+
+.menu {
+  flex: 2;
+  border: solid 1px #d9d9d9;
+  overflow-y: auto;
+  height: 100vh;
+}
+.logo {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.companyLogo {
+  align-items: center;
+  gap: 10px;
+}
+.profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: none;
+}
+
+.profile img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#team,
+#folders {
+  border: solid 1px #d9d9d9;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.customButton {
+  color: rgb(88, 87, 87);
+  background-color: rgb(223, 218, 218);
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.customButton:hover {
+  background-color: rgb(196, 192, 192);
+  transition: all 0.2s;
+}
+
+.singleFolderWithDropDown {
+  display: flex;
+  flex-direction: column;
+}
+
+.singleTeam,
+.singleFolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.leftSingleFolder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.singleTeam:hover,
+.singleFolder:hover {
+  background-color: lightgray;
+}
+
+#createButton {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  gap: 10px;
+}
+
+#createFolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop-down-div {
+  padding-left: 20px;
+  display: none;
+}
+.active-drop-down {
+  display: block;
+}
+
+/* items section */
+
+.items {
+  flex: 7;
+  border: solid 1px #d9d9d9;
+  padding: 10px;
+  height: 100vh;
+  overflow-y: auto;
+}
+.itemsHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #d9d9d9;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.itemsHead > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.inputDiv {
+  border: solid 1px #d9d9d9;
+  padding: 3px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputDiv input {
+  border: none;
+  background-color: transparent;
+}
+
+.icons {
+  background-color: transparent;
+  border: solid 1px #d9d9d9;
+}
+
+.itemsMenu {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px #d9d9d9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* items table */
+
+table,
+td,
+th {
+  border: solid 1px #d9d9d9;
+  padding: 3px;
+
+  border-collapse: collapse;
+
+  padding: 5px;
+}
+
+.brandName {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.membersImage {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transform: translateX();
+}
+
+.cell1Button {
+  color: rgb(121, 120, 120);
+  background-color: rgb(245, 244, 244);
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
+
+.cell2Style {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  padding: 10px;
+}
+.activeCell{
+    background-color: rgb(151, 149, 149);
+    color: rgb(7, 7, 7);
+    
+}
